@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f5f6f7;
+  color: #333;
+  line-height: 1.6;
+}
+/* Navbar */
+.navbar {
+  background: #121e31;
+  display: flex;
+  justify-content: space-between; /* logo left, links center, buttons right */
+  align-items: center;
+  padding: 10px 40px;
+}
+.logo img {
+  width: 30px;
+  border-radius: 50%;
+}
+.navbar .logo {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex: 1; /* pushes links to center */
+}
+
+.navbar .nav-links li {
+  display: flex;
+  align-items: center;
+}
+.navbar .nav-links li a:hover {
+  color: #007bff;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 6px 12px;
+  transition: 0.3s;
+}
+
+
+
+.navbar .auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar .btn {
+  background: transparent;
+  margin-left: 10px;
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.navbar .sign-in {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.navbar .sign-in:hover {
+  background: #007bff;
+  color: #fff;
+}
+.navbar .register{
+    background: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+}
+.navbar .register:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Banner */
+.new img {
+  width: 100%;
+  max-height: 400px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px;
+}
+.banner img {
+  width: 48%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Clubs */
+.clubs {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+.clubs h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #121e31;
+}
+.club {
+  background: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 6px solid #121e31;
+  border-radius: 8px;
+  box-shadow:3px 3px 5px gray;
+}
+.club h3 {
+  margin: 0 0 10px;
+  color: #121e31;
+}
+
+/* Footer */
+.icon{
+  position: absolute;
+  left: 5%;
+}
+footer {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  background: #121e31;
+  color: #fff;
+  padding: 30px 10px;
+  flex-wrap: wrap;
+}
+
+footer h4 {
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin: 6px 0;
+  color: #ddd;
+}
+.footer-note {
+  position: absolute;
+  left: 42%;
+  bottom: 10px;
+  font-size: 14px;
+  margin-top: 20px;
+}

@@ -1,0 +1,202 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #121e31;
+  color: #fff;
+}
+
+header .logo img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+header nav a:hover {
+  color: #007bff;
+}
+header .auth-buttons button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header .auth-buttons .login {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+header .auth-buttons .login:hover {
+  background: #007bff;
+  color: #fff;
+}
+header .auth-buttons .register {
+  background: #fff;
+  color: #111;
+}
+header .auth-buttons .register:hover {
+  background: #007bff;
+  color: #fff;
+}   
+/* Hero */
+.hero {
+  background: url("img/Alumnibg.jpg") no-repeat center/cover;
+  height: 400px;
+  position: relative;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  color: #121e31;
+  text-shadow:2px 4px 12px #FFF;
+  font-size: 2.5rem;
+  /* text-align: center; */
+}
+
+/* Back To Roots */
+.roots {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.roots h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.roots .gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.roots .gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Success Stories */
+.success {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.success h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.success .cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.success .card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.success .card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+.success .circle {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.success .circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.success h3 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.success p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Footer */
+.icon{
+  position: absolute;
+  left: 5%;
+}
+footer {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  background: #121e31;
+  color: #fff;
+  padding: 30px 10px;
+  flex-wrap: wrap;
+}
+
+footer h4 {
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin: 6px 0;
+  color: #ddd;
+}
+.footer-note {
+  position: absolute;
+  left: 42%;
+  bottom: 10px;
+  font-size: 14px;
+  margin-top: 20px;
+}
